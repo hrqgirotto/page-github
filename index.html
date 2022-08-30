@@ -90,7 +90,7 @@
                     </div>
                 </div>
                 <div class="row button_container" id="button_chechout_hero">
-                    <div class="col">
+                    <div class="col-md-12">
                         <button type="button" data-ripple-color="#fff" class="btn material-ripple" data-animation="
               ripple" onclick="redirect()">Quero emagrecer hoje</button>
                         <div>
@@ -571,15 +571,16 @@
             setTimeout(function() {
                 $('#button_chechout_hero').show();
                 $('#button_chechout_final').show();
-            }, 3.4 * 60 * 1000);
+            }, 1);
         });
         var scrollEventHandler = function() {
             window.scroll(0, window.pageYOffset)
         }
         window.addEventListener("scroll", scrollEventHandler, false);
         document.getElementById("locationJS").innerHTML = geoplugin_city();
+        
         function redirect() {
-            location.href = "https://pay.kiwify.com.br/crCE2ZQ"+src;
+            location.href = "https://pay.kiwify.com.br/crCE2ZQ" + src;
         }
     </script>
     <script src="pv2/js/scripts2.js"></script>
